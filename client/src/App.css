@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+body{
+  color: #222;
+}
+img{
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+main{
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a{
+  text-decoration:none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav{
+  display:flex;
+  gap: 15px;
+}
+
+div.post{
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+div.post div.texts h2{
+  margin-top:-8px;
+  font-size: 1.8rem;
+  font-weight: 590;
+}
+
+p.post p.info{
+  margin: 6px 0;
+  color:#222;
+  font-size: 7rem;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.author{
+  font-weight: 600;
+}
+
+div.post p.info a.author{
+  color:#333;
+}
+
+div.post p.summary{
+  margin: 10px 0;
+  line-height: 1.5rem; 
+}
+time{
+  font-weight: 300;
+}
+
+.Log{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: rgb(243, 243, 243);
+}
+
+.login {
+  float: left;
+  width: 44%;
+  padding: 10px;
+  margin: 10px 22px;
+  display: flex;
+  flex-direction: column;
+  
+/* Should be removed. Only for demonstration */
+}
+.Log:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.loggs{
+  margin-top: 200px;
+}
+
+.login input{
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  background-color: rgb(250, 249, 249);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.login button{
+  margin-top: 17px;
+  border-radius: 10px;
+  border: none;
+  padding: 7px;
+  width: 60%;
+  margin-left: 70px;
+  background-color: rgb(224, 224, 224);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+} 
+
+
+.headingLR{
+  margin-top: -28px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+}
