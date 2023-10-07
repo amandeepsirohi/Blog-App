@@ -1,21 +1,19 @@
-export default function Post()
+import {format} from "date-fns";
+
+export default function Post({title , summary , cover , content , createdAt , author})
 {
     return (
         <div className='post'>
         <div className="image">
-        <img src='https://img.freepik.com/premium-photo/random-best-photo_865967-223915.jpg'/>
+        <img src={'http://localhost:4000/'+cover}/>
         </div>
         <div className="texts">
-        <h2>Finding friends at any age</h2>
+        <h2>{title}</h2>
         <p className="info">
-          <span className="author">Amandeep  </span>
-          <time>2023-oct-6 9:32 pm</time>
+          <span className="author">{author.username}</span>
+          <time>{format(new Date(createdAt) , 'MMM d, yyyy HH:mm')}</time>
         </p>
-        <p className='summary'>I wanted to add some words to give context. What words would make it okay? I
-          was giving my number to a married man with two little kids, in front of his
-          drunk bachelor party friends, while my boyfriend stood beside me. At the door to
-          the pub my confidence failed me (or my better judgment won) and I crumpled the
-          note in my pocket.</p>
+        <p className='summary'>{summary}</p>
         </div>
       </div>
     );
