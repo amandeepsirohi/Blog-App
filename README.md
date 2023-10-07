@@ -58,6 +58,9 @@ npm start
 > - jsonwebtoken
 > - bcryptjs
 > - dotenv
+> - multer
+> - cookieParser
+> - cors
 
 ## Client (React.js)
 > - React
