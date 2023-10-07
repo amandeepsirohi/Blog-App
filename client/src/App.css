@@ -135,3 +135,7 @@ time{
   font-weight: 400;
   font-size: 40px;
 }
+
+div.postpage div.image{
+  min-height: 200px  ;
+}
