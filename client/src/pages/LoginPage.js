@@ -45,7 +45,7 @@ export default function LoginPage() {
       </div>
       <div className="Log">
         <div className="login">
-          <img
+          <img className='log_img'
             src="https://images.unsplash.com/flagged/photo-1576697362153-ac5f08c9b140?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80"/>
         </div>
         <div>
