@@ -40,19 +40,22 @@ const [redirect , setRedirect] = useState(false);
   return (
     <form onSubmit={createNewPost}>
       <input
+        style={{marginTop:"20px" , fontSize:"20px"}}
         type="text"
         placeholder={'Title'}
         value={title}
         onChange={ev => setTitle(ev.target.value)}/>
       <input
+        style={{marginTop:"20px",marginLeft:"10px",fontSize:"20px"}}
         type="text"
         placeholder={'Summary'}
         value={summary}
         onChange={ev => setSummary(ev.target.value)}/>
-      <input type="file"  onChange={ev=>setFiles(ev.target.files)} />
-      <Editor value={content} onChange={setContent}/>
+      <input style={{display:"block", marginTop:"10px",marginBottom:"30px",fontSize:"15px"}} type="file"  onChange={ev=>setFiles(ev.target.files)} />
+      <Editor  value={content} onChange={setContent}/>
       <button style={{
-        marginTop: '5px'
+        marginTop: '20px',
+        fontSize:"15px"
       }}>Create Post</button>
     </form>
   )

@@ -22,11 +22,11 @@ export default function PostPage() {
     return '';
   return (
     <div className="post-page">
-      <div className="edit_main edit-content">{postInfo.title}</div>
+      <div style={{fontSize:"50px"}} className="edit_main edit-content">{postInfo.title}</div>
       <div className="edit-content">
-        <time>{format(new Date(postInfo.createdAt), 'MMM d, yyyy HH:mm')}</time>
+        <time style={{fontSize:"22px" , fontWeight:"600"}} >{format(new Date(postInfo.createdAt), 'MMM d, yyyy HH:mm')}</time>
       </div>
-      <div className="edit-content author">
+      <div style={{fontSize:"18px" , fontWeight:"500"}} className="edit-content author">
         by {postInfo.author.username}  <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -41,14 +41,14 @@ export default function PostPage() {
         </svg>
       </div>
       {userInfo.id === postInfo.author._id && (
-        <div className="edit-content">
+        <div style={{fontSize:"22px" , fontWeight:"500"}} className="edit-content">
           <Link className="edit" to={`/edit/${postInfo._id}`}>Edit this post</Link>
         </div>
       )}
       <div className="image">
-        <img className="post_img" src={`http://localhost:4000/${postInfo.cover}`}/>
+        <img style={{height:"500px"}} className="post_img" src={`http://localhost:4000/${postInfo.cover}`}/>
       </div>
-      <div dangerouslySetInnerHTML={{
+      <div style={{fontSize:"20px" , fontWeight:"400"}}  dangerouslySetInnerHTML={{
         __html: postInfo.content
       }}/>
     </div>

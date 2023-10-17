@@ -51,16 +51,18 @@ export default function LoginPage() {
         <div>
           <form className="login loggs" onSubmit={login}>
             <input
+              style={{fontSize:"20px"}}
               type="text"
               placeholder="username"
               value={username}
               onChange={ev => setUsername(ev.target.value)}/>
             <input
+              style={{fontSize:"20px"}}
               type="password"
               placeholder="password"
               value={password}
               onChange={ev => setPassword(ev.target.value)}/>
-            <button>Login</button>
+            <button style={{fontSize:"20px"}}>Login</button>
           </form>
         </div>
       </div>
