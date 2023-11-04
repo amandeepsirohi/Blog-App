@@ -3,7 +3,7 @@ const cors = require('cors');
 const {default: mongoose} = require("mongoose");
 const User = require('./models/User');
 const Post = require('./models/Post')
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
 const multer = require('multer');
@@ -73,7 +73,7 @@ app.post("/login", async(req, res) => {
 });
 
 
-//get user profile
+//get user profiles in new
 app.get('/profile', (req, res) => {
   const {token} = req.cookies;
   jwt.verify(token, secret, {}, (err, info) => {
